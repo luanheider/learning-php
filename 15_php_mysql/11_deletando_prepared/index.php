@@ -15,3 +15,6 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $id);
 
 $stmt->execute();
+
+$stmt->close();
+$conn->close();
