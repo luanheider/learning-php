@@ -20,3 +20,4 @@ $stmt->bind_param("ss", $nome, $descricao); // s = string, i = integer, d = doub
 
 //aqui é onde executamos a query
 $stmt->execute();
+$conn->close();
